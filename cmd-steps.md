@@ -20,5 +20,8 @@ git push
 # amend the previous commit
 # add some changes to the cv
 git add .
-git commit --amend -m "updated cv name"
+git commit --amend -m "updated cv"
 git push
+
+# Reset hard to the commit before HEAD
+git reset --hard HEAD~1
