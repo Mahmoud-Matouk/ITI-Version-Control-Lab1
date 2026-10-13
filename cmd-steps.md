@@ -1,20 +1,24 @@
-# Create new repo
+# create new repo
 git init
 
-# Add github repo
+# add github repo
 git remote add origin https://github.com/Mahmoud-Matouk/ITI-Version-Control-Lab1
 
-# Add new file and push to github
-git add cv.txt
+# add new file and push to github
+git add .
 git commit -m "first commit"
+git push
 
-# Push to github
-git push -u origin main
-
-# change the cv.txt to Eng-Mahmoud-Matouk.txt
+# rename the cv.txt to Eng-Mahmoud-Matouk.txt
 mv cv.txt Eng-Mahmoud-Matouk.txt
 
 # commit changes to github
 git add .
 git commit -m "updated cv name"
+git push
+
+# amend the previous commit
+# add some changes to the cv
+git add .
+git commit --amend -m "updated cv name"
 git push
